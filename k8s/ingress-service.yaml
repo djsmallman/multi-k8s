@@ -5,9 +5,12 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$1
+    cert-manager.io/issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
     # UPDATE THIS LINE ABOVE
 spec:
   rules:
+    - host: "k8s.smallmanconsultancy.co.uk"
     - http:
         paths:
           - path: /?(.*)
