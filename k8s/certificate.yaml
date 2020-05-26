@@ -7,14 +7,14 @@ spec:
     issuerRef:
         Name: letsencrypt-prod
         kind: ClusterIssuer
-    commonName: k8s.smallmanconsultancy.co.uk
+    commonName: www.smallmanconsultancy.co.uk
     dnsNames:
-        - k8s.smallmanconsultancy.co.uk
+        - smallmanconsultancy.co.uk
         - www.smallmanconsultancy.co.uk
     acme:
         config:
             - http01:
                     ingressClass: nginx
             domains:
-                    - k8s.smallmanconsultancy.co.uk
+                    - smallmanconsultancy.co.uk
                     - www.smallmanconsultancy.co.uk

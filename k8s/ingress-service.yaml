@@ -10,7 +10,7 @@ metadata:
     # UPDATE THIS LINE ABOVE
 spec:
   rules:
-    - host: "k8s.smallmanconsultancy.co.uk"
+    - host: "www.smallmanconsultancy.co.uk"
     - http:
         paths:
           - path: /?(.*)
